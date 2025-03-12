@@ -11,9 +11,12 @@ public class Ex03_Byte {
 		byte var3 = 0;
 		byte var4 = 30;
 		byte var5 = (byte) 128;     // 127까진데 128이라 에러남?? 
-		                            // 걍 127로 고쳤었는데 강제형변환 써보라는거였음...
+		byte var6 = (byte) 130;     // 걍 127로 고쳤었는데 강제형변환 써보라는거였음...
 		                            // 강제형변환 사용하면 표현은 되지만 -128이 되버림
-		                            // 데이터 범위를 벗어났기때문에, -128 ~ 127까지 표현가능인데 127에서 1이 넘어가버려서 한바퀴 돌아 -128이됨?!
+		                            // 데이터 범위를 벗어났기때문에, -128 ~ 127까지 표현가능인데
+		                            // 127에서 1이 넘어가버려서 한바퀴 돌아 -128이됨?!
+		                            // var6을 하나 더 만들어서 실행해본 결과
+		                            // 값이 넘어가면 원을 도는 방식으로 표현함을 확인
 		// (에러)
 		// - 에러 메시지 : Type mismatch
 		// → 자료형(타입)이 불일치, 데이터 범위 벗어남(overflow)
@@ -23,5 +26,6 @@ public class Ex03_Byte {
 		System.out.println("var3 : " + var3);
 		System.out.println("var4 : " + var4);
 		System.out.println("var5 : " + var5);
+		System.out.println("var6 : " + var6);
 	}
 }

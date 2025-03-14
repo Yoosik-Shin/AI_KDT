@@ -33,6 +33,18 @@ public class Ex07_Enum {
 		System.out.println("PURPLE 의 index : " + index);
 		
 		
+		Test[] test = Test.values();
+		
+		for (Test test2 : test) {
+			System.out.print(test2 + " ");
+		}
+		System.out.println();
+		
+		Test H = Test.valueOf("A");
+		System.out.println("H : " + H);
+		
+		int index2 = H.ordinal();
+		System.out.println("A의 인덱스 : " + index2);
 	}
 
 }

@@ -21,7 +21,7 @@ package 단축키;
 // 뒤로 가기 : ctrl + Z
 // 앞으로 가기 : ctrl + Y
 // 전체 화면 :  ctrl + M
-
+//
 public class 단축키 {
 	// main
 	// sysout : 메인메소드 안에서만 동작가능 다른데선 동작X

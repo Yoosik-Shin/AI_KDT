@@ -23,7 +23,7 @@ public class Ex11_OddEven {
 				System.out.print(odd + "+");
 			} else {
 				even = even + a;
-				System.out.println(even + "+");
+				System.out.print(even + "+");
 			}
 			a++;
 		}

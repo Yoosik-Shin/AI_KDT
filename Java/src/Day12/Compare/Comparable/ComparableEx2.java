@@ -44,7 +44,7 @@ public class ComparableEx2 {
 
 	public static void main(String[] args) {
 		List<String> movieList = new ArrayList<String>();
-		movieList.add("영화제목", "감독", 가격);
+		movieList.add("영화제목", "감독", 가격); // ex임 저기 맞춰서 입력
 		
 		// 정렬 전
 				System.out.println("정렬 전");

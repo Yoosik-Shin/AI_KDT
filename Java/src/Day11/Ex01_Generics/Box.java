@@ -15,7 +15,7 @@ package Day11.Ex01_Generics;
  */
 public class Box <T> {
 
-	Object t;
+	T t;
 
 	public T getT() {
 		return t;

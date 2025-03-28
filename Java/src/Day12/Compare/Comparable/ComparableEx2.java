@@ -2,7 +2,6 @@ package Day12.Compare.Comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 import lombok.Builder;
 import lombok.Data;
@@ -19,49 +18,52 @@ import lombok.Data;
  *   	 i) 	해당 문자열이 사전순으로 더 뒤에 있으면 (양수)
  *   	 ii) 	해당 문자열이 사전순으로 더 앞에 있으면 (음수)
  *   	 iii) 	같은 문자열이면 0
- */		 
+ */	
+
+
 @Data
 @Builder
 class Movie implements Comparable<Movie> {
-	
 	String title;
 	String director;
 	int price;
 	
 	@Override
 	public int compareTo(Movie o) {
-		String thisString = this.getTitle();
-		String comString = o.getTitle();
-		
-		int result = thisString.compareTo(comString); // 숫자로 반환하니 숫자 변수에 넣어줘야함
+		// 제목순으로 오름차순
+		String thisTitle = this.getTitle();
+		String comTitle = o.getTitle();
+		int result = thisTitle.compareTo(comTitle);
 		
 		return result;
 	}
-	
 }
-
 public class ComparableEx2 {
 
 	public static void main(String[] args) {
-		List<String> movieList = new ArrayList<String>();
-		movieList.add("영화제목", "감독", 가격); // ex임 저기 맞춰서 입력
+		ArrayList<Movie> movieList = new ArrayList<Movie>();
+		movieList.add(new Movie("미키17", "봉준호", 25000));
+		movieList.add(new Movie("서브스턴스", "코랄리 파르쟈", 20000));
+		movieList.add(new Movie("백설공주", "디즈니", 15000));
+		movieList.add(new Movie("타짜", "최동훈", 18000));
+		movieList.add(new Movie("포레스트검프", "로버트 지메키스", 19000));
 		
 		// 정렬 전
-				System.out.println("정렬 전");
-				for (Movie movie : movieList) {
-					System.out.println(movie);
-				}
-				System.out.println();
-				
-				// 정렬
-				Collections.sort(movieList);
-				
-				// 정렬 후
-				System.out.println("정렬 후");
-				for (Movie movie : movieList) {
-					System.out.println(movie);
-				}
-				System.out.println();
+		System.out.println("정렬 전");
+		for (Movie movie : movieList) {
+			System.out.println(movie);
+		}
+		System.out.println();
+		
+		// 정렬
+		Collections.sort(movieList);
+		
+		// 정렬 후
+		System.out.println("정렬 후");
+		for (Movie movie : movieList) {
+			System.out.println(movie);
+		}
+		System.out.println();
 	}
 	
 }

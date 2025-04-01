@@ -26,7 +26,7 @@ public class Student {
 	
 		//this - name이라는 이름이 같은 객체의 변수와 매개변수를 구분하기위해 객체의변수를 표시하는 방법
 	public Student(String name) {
-		name = name;
+		this.name = name;
 	}
 
 

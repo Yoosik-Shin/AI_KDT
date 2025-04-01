@@ -13,7 +13,7 @@ public class SerializePerson {
 		String name = sc.nextLine();
 		System.out.print("나이 : ");
 		int age = sc.nextInt();
-		
+		 
 		// Person 객체 생성
 		Person person = new Person(name, age);
 		

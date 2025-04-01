@@ -1,6 +1,5 @@
 package 복습Day01;
 
-import java.util.Iterator;
 
 public class Lotto {
 

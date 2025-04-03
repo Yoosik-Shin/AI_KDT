@@ -7,7 +7,7 @@ public class Ex17_Break {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		// angksfnvm
+		// 무한루프
 		// : 반드시 종료 조건을 추가해 주어야 한다.
 		while (true) {
 			System.out.print("입력 : ");

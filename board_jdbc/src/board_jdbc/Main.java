@@ -18,6 +18,15 @@ public class Main {
 	
 	/**
 	 *  메뉴판
+	 *  메뉴판
+	 *  메뉴판
+	 *  메뉴판
+	 *  메뉴판
+	 *  메뉴판
+	/**
+	 *  메뉴판
+	/**
+	 *  메뉴판
 	 */
 	public static void menu() {
 		System.out.println(":::::::::: 게시판 ::::::::::");
@@ -30,6 +39,10 @@ public class Main {
 		System.out.print(":::::::::: 번호 입력 : ");
 	}
 	
+	/**
+	/**
+	/**
+	/**
 	/**
 	 *  게시글 목록
 	 */
